@@ -53,8 +53,6 @@ ENV['CC'] = RbConfig::CONFIG['CC']
 ENV['CXX'] = RbConfig::CONFIG['CXX']
 ENV['LD'] = ENV['CC']
 
-ENV['AR'] = 'libtool -o' if RUBY_PLATFORM =~ /darwin/
-
 ENV['EMBED_OPENSSL'] = 'true'
 ENV['EMBED_ZLIB'] = 'true'
 ENV['EMBED_CARES'] = 'true'
